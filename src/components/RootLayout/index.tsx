@@ -8,7 +8,9 @@ function RootLayout({ children }: RootLayoutProps) {
       <Grid size={2}>
         <Sidebar />
       </Grid>
-      <Grid size={10}>{children}</Grid>
+      <Grid size={10} className="p-4">
+        {children}
+      </Grid>
     </Grid>
   );
 }

@@ -8,7 +8,7 @@ function MenuItem({ name, path }: MenuItemProps) {
       onClick={() => {
         navigate(path);
       }}
-      className="border px-1 py-2 mb-1 cursor-pointer rounded-md bg-gray-100 hover:bg-gray-200"
+      className="border p-2 mb-1.5 cursor-pointer rounded-md bg-gray-100 hover:bg-gray-200 text-sm"
     >
       {name}
     </div>
