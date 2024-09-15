@@ -1,13 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
+import Buttons from "./pages/Buttons";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sample" element={<>Home</>} />
+        <Route path="/">
+          <Route index element={<Buttons />} />
+          <Route path="buttons" element={<Buttons />} />
+          <Route path="inputs" element={<>Inputs</>} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
