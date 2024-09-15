@@ -1,11 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Button from "./components/Button";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="text-lg font-bold">
-      <Button name="Click" disableRipple />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sample" element={<>Home</>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
