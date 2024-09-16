@@ -1,3 +1,4 @@
+import { TextFieldProps } from "@mui/material";
 import { ComponentType, ReactNode } from "react";
 
 export interface RootLayoutProps {
@@ -10,4 +11,8 @@ export interface MenuItemProps {
 
 export interface withRootLayoutHocProps {
   component: ComponentType;
+}
+
+export interface TextInputProps extends Omit<TextFieldProps, "name"> {
+  name: string;
 }
