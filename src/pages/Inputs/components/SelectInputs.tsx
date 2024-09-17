@@ -25,19 +25,13 @@ function SelectInputs() {
 
       <Grid container columnSpacing={3} rowSpacing={3} className="p-3">
         <Grid size={4}>
-          <Select
-            name="select"
-            label="Select"
-            options={options}
-            placeholder="Select"
-          />
+          <Select name="select" label="Select" options={options} />
         </Grid>
         <Grid size={4}>
           <Select
-            name="select"
+            name="multiSelect"
             label="Select"
             options={options}
-            placeholder="Select"
             multiple
           />
         </Grid>

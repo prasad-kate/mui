@@ -39,7 +39,7 @@ function Select({
                 ? Array.isArray(field.value)
                   ? field.value
                   : []
-                : field.value
+                : field.value || ""
             }
             onChange={(e) => {
               field.onChange(e.target.value);
