@@ -1,4 +1,4 @@
-import { SelectProps, TextFieldProps } from "@mui/material";
+import { CheckboxProps, SelectProps, TextFieldProps } from "@mui/material";
 import { ComponentType, ReactNode } from "react";
 
 export interface RootLayoutProps {
@@ -25,4 +25,10 @@ type Option = {
 export interface SelectInputProps extends Omit<SelectProps, "name"> {
   name: string;
   options: Option[];
+}
+
+export interface CheckBoxInputProps extends Omit<CheckboxProps, "name"> {
+  name: string;
+  label?: string;
+  required?: boolean;
 }

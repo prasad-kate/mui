@@ -1,5 +1,6 @@
-import { Grid2 as Grid, Typography } from "@mui/material";
+import { Grid2 as Grid } from "@mui/material";
 import Select from "../../../components/ui/Select";
+import Title from "../../../components/ui/Title";
 
 function SelectInputs() {
   const options = [
@@ -19,9 +20,7 @@ function SelectInputs() {
 
   return (
     <>
-      <Typography variant="h6" className="px-4 font-bold pt-4">
-        Select Inputs
-      </Typography>
+      <Title title="Select Inputs" />
 
       <Grid container columnSpacing={3} rowSpacing={3} className="p-3">
         <Grid size={4}>

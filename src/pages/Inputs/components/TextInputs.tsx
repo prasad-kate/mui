@@ -1,13 +1,12 @@
 import { AccountCircle } from "@mui/icons-material";
-import { Grid2 as Grid, InputAdornment, Typography } from "@mui/material";
+import { Grid2 as Grid, InputAdornment } from "@mui/material";
 import TextInput from "../../../components/ui/TextInput";
+import Title from "../../../components/ui/Title";
 
 function TextInputs() {
   return (
     <>
-      <Typography variant="h6" className="px-4 font-bold">
-        Text Inputs
-      </Typography>
+      <Title title="Text Inputs" />
 
       <Grid container columnSpacing={3} rowSpacing={3} className="p-3">
         <Grid size={4}>
