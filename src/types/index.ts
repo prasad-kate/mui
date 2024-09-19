@@ -32,3 +32,9 @@ export interface CheckBoxInputProps extends Omit<CheckboxProps, "name"> {
   label?: string;
   required?: boolean;
 }
+
+export interface DatePickerInputProps extends Omit<TextFieldProps, "name"> {
+  name: string;
+  label?: string;
+  required?: boolean;
+}
