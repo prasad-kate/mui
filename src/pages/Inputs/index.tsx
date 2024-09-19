@@ -1,10 +1,11 @@
 import { FormProvider, useForm } from "react-hook-form";
 import withRootLayout from "../../HOCs/withRootLayout";
 import CheckboxInputs from "./components/CheckboxInputs";
-import SelectInputs from "./components/SelectInputs";
-import TextInputs from "./components/TextInputs";
 import DatePickerInputs from "./components/DateInputs";
 import RadioButtonInputs from "./components/RadioButtons";
+import SelectInputs from "./components/SelectInputs";
+import SwitchInputs from "./components/SwitchInputs";
+import TextInputs from "./components/TextInputs";
 
 function Inputs() {
   const methods = useForm();
@@ -16,6 +17,7 @@ function Inputs() {
       <CheckboxInputs />
       <DatePickerInputs />
       <RadioButtonInputs />
+      <SwitchInputs />
     </FormProvider>
   );
 }
