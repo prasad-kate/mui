@@ -1,23 +1,20 @@
 import { Grid2 as Grid } from "@mui/material";
-import Select from "../../../components/ui/Select";
+import RadioButton from "../../../components/ui/RadioButton";
 import Title from "../../../components/ui/Title";
 import { options } from "../../../constants/options";
 
-function SelectInputs() {
+function RadioButtonInputs() {
   return (
     <>
-      <Title title="Select Inputs" />
+      <Title title="Radio Button Inputs" />
 
       <Grid container columnSpacing={3} rowSpacing={3} className="p-3">
         <Grid size={4}>
-          <Select name="select" label="Select" options={options} />
-        </Grid>
-        <Grid size={4}>
-          <Select
-            name="multiSelect"
-            label="Select"
+          <RadioButton
+            name="radioButtons"
+            label="Radio Buttons"
             options={options}
-            multiple
+            row
           />
         </Grid>
       </Grid>
@@ -25,4 +22,4 @@ function SelectInputs() {
   );
 }
 
-export default SelectInputs;
+export default RadioButtonInputs;
