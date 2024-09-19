@@ -8,7 +8,7 @@ function RootLayout({ children }: RootLayoutProps) {
       <Grid size={2}>
         <Sidebar />
       </Grid>
-      <Grid size={10} className="p-4">
+      <Grid size={10} className="p-4 max-h-screen overflow-auto thin-scrollbar">
         {children}
       </Grid>
     </Grid>
