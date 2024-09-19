@@ -1,7 +1,7 @@
 import { Grid2 as Grid } from "@mui/material";
 import Select from "../../../components/ui/Select";
 import Title from "../../../components/ui/Title";
-import { options } from "../../../constants/options";
+import { options } from "../../../constants/options.tsx";
 
 function SelectInputs() {
   return (

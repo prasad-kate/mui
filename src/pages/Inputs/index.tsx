@@ -6,6 +6,7 @@ import RadioButtonInputs from "./components/RadioButtons";
 import SelectInputs from "./components/SelectInputs";
 import SwitchInputs from "./components/SwitchInputs";
 import TextInputs from "./components/TextInputs";
+import ToggleButtonInputs from "./components/ToggleButtonInputs";
 
 function Inputs() {
   const methods = useForm();
@@ -18,6 +19,7 @@ function Inputs() {
       <DatePickerInputs />
       <RadioButtonInputs />
       <SwitchInputs />
+      <ToggleButtonInputs />
     </FormProvider>
   );
 }
